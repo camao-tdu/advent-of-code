@@ -26,7 +26,7 @@ public class Day2 : MonoBehaviour
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                var values = regx.Matches(line).Cast<Match>().Select(match => (int.Parse(match.Value)));
+                var values = regx.Matches(line).Cast<Match>().Select(match => int.Parse(match.Value));
                 reportsList.Add(values.ToList());
             }
         }
@@ -84,7 +84,7 @@ public class Day2 : MonoBehaviour
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                var values = regx.Matches(line).Cast<Match>().Select(match => (int.Parse(match.Value)));
+                var values = regx.Matches(line).Cast<Match>().Select(match => int.Parse(match.Value));
                 reportsList.Add(values.ToList());
             }
         }
