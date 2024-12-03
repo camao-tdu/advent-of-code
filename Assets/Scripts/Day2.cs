@@ -111,7 +111,6 @@ public class Day2 : MonoBehaviour
                 output = outputs[i],
             };
             JobHandle scheduleJobHandle = job.Schedule();
-            scheduleJobHandle.Complete();
             jobHandles[i] = scheduleJobHandle;
         }
 
