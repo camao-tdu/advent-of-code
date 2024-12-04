@@ -29,7 +29,7 @@ public class Day3 : MonoBehaviour
 
 
         stopwatch.Stop();
-        UnityEngine.Debug.Log(String.Format("result: {0} in: {1} ms", result, stopwatch.ElapsedMilliseconds));
+        UnityEngine.Debug.Log(String.Format("result: {0} in: {1} ns", result, stopwatch.Elapsed.TotalMilliseconds * 1000000));
 
     }
 

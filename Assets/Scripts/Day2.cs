@@ -118,7 +118,7 @@ public class Day2 : MonoBehaviour
         var result = outputs.Where(res => res[0] == true).Count();
         stopwatch.Stop();
 
-        UnityEngine.Debug.Log(String.Format("result: {0} in: {1} ms", result, stopwatch.ElapsedMilliseconds));
+        UnityEngine.Debug.Log(String.Format("result: {0} in: {1} ns", result, stopwatch.Elapsed.TotalMilliseconds * 1000000));
 
         jobHandles.Dispose();
         foreach (var outputArray in outputs)

@@ -91,7 +91,7 @@ public class Day1 : MonoBehaviour
         };
         job.Schedule().Complete();
         stopwatch.Stop();
-        UnityEngine.Debug.Log(String.Format("result: {0} in: {1} ms", output[0], stopwatch.ElapsedMilliseconds));
+        UnityEngine.Debug.Log(String.Format("result: {0} in: {1} ns", output[0], stopwatch.Elapsed.TotalMilliseconds * 1000000));
         output.Dispose();
         column1.Dispose();
         column2.Dispose();
